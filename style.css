@@ -148,3 +148,107 @@ footer {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+nav a {
+  color: inherit;
+}
+
+.dark .pricing-card {
+  background-color: #1e1e1e;
+  border-color: #333;
+}.project img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  }
+
+  #menu-toggle {
+    display: block;
+    background: none;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+  }
+}/* 🌙 Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode a {
+  color: #90caf9;
+}
+
+/* 📱 Mobile Nav Styles */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+#menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}#theme-toggle {
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: #005fa3;
+}.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
